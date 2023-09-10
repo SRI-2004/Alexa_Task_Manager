@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "name": "Task 1",
+      "completed": false,
+      "completionDate": null
+    },
+    {
+      "id": 2,
+      "name": "Task 2",
+      "completed": true,
+      "completionDate": "2023-09-12T14:30:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Task 3",
+      "completed": false,
+      "completionDate": null
+    }
+  ]
+}
