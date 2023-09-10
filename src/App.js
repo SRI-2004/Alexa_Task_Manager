@@ -16,9 +16,7 @@ const App = () => {
   const [newTaskName, setNewTaskName] = useState('');
   const [completedTasks, setCompletedTasks] = useState([]);
   const [show, setShow] = useState('');
-  const [selectedDate, setSelectedDate] = useState(null); // State to store the selected date
-
-  // Define the calculateCompletionPercentage function
+  const [selectedDate, setSelectedDate] = useState(null);
   const calculateCompletionPercentage = () => {
     const tasksOnSelectedDate = tasks.filter(task => {
       if (task.completionDate) {
@@ -86,7 +84,7 @@ const App = () => {
     }
   };
 
-  // Ensure tasksToShow is defined based on the current state of tasks and completedTasks
+  
   const tasksToShow = tasks && tasks.length > 0 ? tasks.filter(task =>
     task.name.includes(show) && !completedTasks.includes(task.id)
   ) : [];
